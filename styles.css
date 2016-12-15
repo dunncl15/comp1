@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.profile-img {
+  height: 75vh;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 25vh;
+  width: 50%;
+  border: 1px solid red;
+}
+
+.double-card {
+  height: 25vh;
+  width: 100%;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
