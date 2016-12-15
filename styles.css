@@ -13,15 +13,16 @@ body {
   width: 100%;
 }
 
-.profile-img {
+.header {
   height: 70vh;
-  width: 50%;
+  width: 100%;
+  background-color: #F15A49;
 }
 
-.about-card {
+.grid {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 h1 {
@@ -58,20 +59,17 @@ button {
 
 /******* Cards *******/
 
-.grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .about-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   height: 30vh;
   background-color: #35bc7a;
 }
 
 .card {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -86,11 +84,11 @@ button {
   height: 25vh;
   width: 100%;
   background-color: #35bc7a;
-  color: #fff;
 }
 
 .card-title {
   margin: 5px 0 0 0;
+  padding-left: 5px;
 }
 
 .icon {
@@ -123,5 +121,44 @@ button {
 }
 
 .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   height: 20vh;
+  background-color: #FF9E00;
+}
+
+@media screen and (min-width: 500px) {
+
+  .wrapper {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+
+  .header {
+    height: 100vh;
+    width: 35%;
+  }
+
+  .grid {
+    height: 100vh;
+    width: 65%;
+  }
+
+  .about-card {
+    height: 33.3333vh;
+    width: 66.6666%;
+    padding: 10px;
+  }
+
+  .card {
+    height: 33.3333vh;
+    width: 33.333%;
+  }
+
+  .social {
+    width: 33.333%;
+    height: 33.3333vh
+  }
 }
