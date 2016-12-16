@@ -79,7 +79,6 @@ h1 {
   align-items: center;
   margin: 10px 8px 0px 10px;
   padding: 12px 20px;
-  /*width: 30%;*/
   border: 1px solid #fff;
   background-color: #033F63;
   color: #fff;
@@ -125,8 +124,6 @@ h1 {
   width: 100%;
   background-color: #033F63;
 }
-
-
 
 .card-title {
   margin: 5px 0 0 0;
