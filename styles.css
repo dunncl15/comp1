@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Roboto', 'Open Sans', sans-serif;
+  color: #fff;
 }
 
 .wrapper {
@@ -20,19 +21,19 @@ body {
   width: 100%;
   padding: 0 8px;
   background-color: #F15A49;
-  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/5c/e2/82/5ce28237a1a4e0585f132d279f7bd6b4.jpg");
+  background-image: url("images/profile.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 }
 
 .image-carousel {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: absolute;
   top: 10px;
   right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .dots {
@@ -55,7 +56,6 @@ body {
 
 h1 {
   padding: 10px;
-  color: #fff;
   font-size: 1.5em;
   font-weight: 500;
   text-transform: uppercase;
@@ -65,24 +65,32 @@ h1 {
   padding: 0 5px 10px 10px;
   font-size: .9em;
   font-weight: 300;
-  color: #fff;
 }
 
-.button-wrap {
+.btn-wrap {
   display: flex;
+  flex-direction: row;
   margin-bottom: 10px;
 }
 
-button {
-  display: inline-block;
-  margin: 0 8px 0px 10px;
-  padding: 10px 15px;
-  width: 25%;
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 8px 0px 10px;
+  padding: 12px 20px;
+  /*width: 30%;*/
   border: 1px solid #fff;
-  background-color: #35bc7a;
+  background-color: #033F63;
   color: #fff;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+.btn-icon {
+  margin-right: 5px;
+  height: 15px;
+  width: 15px;
 }
 
 /******* Cards *******/
@@ -91,10 +99,10 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 10px;
   width: 100%;
   height: 30vh;
-  padding: 10px;
-  background-color: #35bc7a;
+  background-color: #033F63;
 }
 
 .card {
@@ -105,61 +113,59 @@ button {
   margin: 0 auto;
   height: 26.6666vh;
   width: 50%;
+  cursor: pointer;
 }
 
-.double-card {
+.social-card {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   height: 25vh;
   width: 100%;
-  background-color: #35bc7a;
+  background-color: #033F63;
 }
+
+
 
 .card-title {
   margin: 5px 0 0 0;
   padding-left: 5px;
+  font-size: 1.1em;
 }
 
 .icon {
-  height: 30px;
-  width: 30px;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 40px;
 }
 
 .portfolio {
-  background-color: #F86925;
+  background-color: #D2BF9B;
 }
 
 .experience {
-  background-color: #1E8BC4;
+  background-color: #70A9A1;
 }
 
 .profile {
-  background-color: #FF9E00;
+  background-color: #9DC0BC;
 }
 
 .education {
-  background-color: #F15A49;
+  background-color: #546A7B;
 }
 
 .blog {
-  background-color: #35bc7a;
+  background-color: #546A7B;
 }
 
 .contact {
-  background-color: #1E8BC4;
+  background-color: #70A9A1;
 }
 
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 20vh;
-  background-color: #FF9E00;
-}
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 550px) {
 
   .about-card {
     width: 66.6666%;
@@ -171,14 +177,14 @@ button {
     height: 33.3333vh;
   }
 
-  .social {
+  .social-card {
     width: 33.3333%;
     height: 33.333vh
   }
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 870px) {
 
   .wrapper {
     flex-wrap: wrap;
@@ -205,7 +211,7 @@ button {
     width: 33.333%;
   }
 
-  .social {
+  .social-card {
     width: 33.333%;
     height: 33.3333vh
   }
